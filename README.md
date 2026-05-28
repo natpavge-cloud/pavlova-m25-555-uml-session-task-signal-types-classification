@@ -67,33 +67,33 @@
 
 2. Создайте виртуальное окружение (рекомендуется):
 
-```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+   ```bash
+  python -m venv venv
+  source venv/bin/activate  # Linux/Mac
+  venv\Scripts\activate     # Windows
 
 3. Установите зависимости:
 
-```bash
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 4. Скачайте данные:
 
-Исходный датасет Run200_Wave_0_1.txt (69 МБ) доступен на Kaggle: [https://www.kaggle.com/competitions/signal-types-classification]
+    Исходный датасет Run200_Wave_0_1.txt (69 МБ) доступен на Kaggle: [https://www.kaggle.com/competitions/signal-types-classification]
 
 5. Поместите файл в папку data/
 
 6. Запустите Jupyter Notebook:
 
-```bash
-jupyter notebook
+   ```bash
+   jupyter notebook
 
 7. Для финального решения откройте final-submission/pavlova_m25_555_uml_signals_classification.ipynb
 
 8. Для просмотра экспериментов откройте любой файл в папке notebooks/
 
 ## Структура репозитория
-```
+   ```
 ├── notebooks/
 │   ├── final_experiment_0_84675.ipynb          # Финальное решение (Accuracy 0.84675)
 │   ├── experiment_0_78137.ipynb                # Эксперимент 1
@@ -110,7 +110,7 @@ jupyter notebook
 ├── requirements.txt                             # Зависимости проекта
 ├── .gitignore                                  # Игнорируемые файлы
 └── README.md                                   # Документация проекта
-```
+    ```
 
 ### Примечание по файлам:
 
