@@ -67,17 +67,14 @@
 
 2. Создайте виртуальное окружение (рекомендуется):
 
-# Создание виртуального окружения
+```bash
 python -m venv venv
-
-# Активация на Linux/Mac
-source venv/bin/activate
-
-# Активация на Windows
-venv\Scripts\activate
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
 
 3. Установите зависимости:
 
+```bash
 pip install -r requirements.txt
 
 4. Скачайте данные:
@@ -88,7 +85,7 @@ pip install -r requirements.txt
 
 6. Запустите Jupyter Notebook:
 
-bash
+```bash
 jupyter notebook
 
 7. Для финального решения откройте final-submission/pavlova_m25_555_uml_signals_classification.ipynb
