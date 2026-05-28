@@ -1,0 +1,14 @@
+﻿# Jupyter Notebook
+.ipynb_checkpoints/
+__pycache__/
+
+# Виртуальное окружение
+venv/
+
+# Файлы ОС
+.DS_Store
+Thumbs.db
+
+# Данные (большой файл)
+*.txt
+!requirements.txt
