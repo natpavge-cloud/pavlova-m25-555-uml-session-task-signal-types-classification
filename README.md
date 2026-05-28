@@ -58,6 +58,21 @@
 * **Язык программирования:** Python 3 (соответствие стандарту PEP8)
 * **Библиотеки:** NumPy, Pandas, Scikit-Learn, SciPy (модуль `signal`), Matplotlib
 
+## Итоговая статистика эксперимента
+
+На основе предсказаний обученной модели вычислен точный баланс зарегистрированных частиц в исследуемом радиационном поле:
+* **Всего идентифицировано частиц:** 23 479 шт.
+* **Гамма-кванты (Класс 0):** 11 520 отсчетов (49.07%) — характеризуются высокой пиковой интенсивностью при быстром молекулярном затухании.
+* **Нейтроны (Класс 1):** 11 959 отсчетов (50.93%) — характеризуются затяжным «хвостом» медленного высвечивания молекул сцинтиллятора.
+
+---
+
+## Стек технологий
+* **Язык программирования:** Python 3 (соответствие стандарту PEP8)
+* **Библиотеки:** NumPy, Pandas, Scikit-Learn, SciPy (модуль `signal`), Matplotlib
+
+---
+
 ## Установка и запуск
 
 1. Клонируйте репозиторий:
@@ -65,33 +80,55 @@
    git clone https://github.com/natpavge-cloud/pavlova-m25-555-uml-session-task-signal-types-classification.git
    cd pavlova-m25-555-uml-session-task-signal-types-classification
 
-Создайте виртуальное окружение (рекомендуется):
+2. Создайте виртуальное окружение (рекомендуется):
 
 bash
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
-
 Установите зависимости:
 
 bash
 pip install -r requirements.txt
-Запустите Jupyter Notebook:
+
+3. Скачайте данные:
+
+Исходный датасет Run200_Wave_0_1.txt (69 МБ) доступен на Kaggle: [https://www.kaggle.com/competitions/signal-types-classification]
+
+4. Поместите файл в папку data/
+
+5. Запустите Jupyter Notebook:
 
 bash
-jupyter notebook notebooks/pulse_shape_discrimination.ipynb
+jupyter notebook
+
+6. Для финального решения откройте final-submission/pavlova_m25_555_uml_signals_classification.ipynb
+
+7. Для просмотра экспериментов откройте любой файл в папке notebooks/
 
 ## Структура репозитория
 text
 ├── notebooks/
-│   ├── final_experiment_0_84675.ipynb                # Финальное решение (Accuracy 0.84675)
-│   ├── experiment_0_78137.ipynb                      # Эксперимент 1
-│   ├── experiment_0_83227_gmm_robust.ipynb           # Эксперимент 2: GMM с RobustScaler
-│   ├── experiment_0_83231_local_quantiles.ipynb      # Эксперимент 3: локальные квантили
-│   └── experiment_0_80646.ipynb                      # Эксперимент 4
+│   ├── final_experiment_0_84675.ipynb          # Финальное решение (Accuracy 0.84675)
+│   ├── experiment_0_78137.ipynb                # Эксперимент 1
+│   ├── experiment_0_83227_gmm_robust.ipynb     # Эксперимент 2: GMM с RobustScaler
+│   ├── experiment_0_83231_local_quantiles.ipynb # Эксперимент 3: локальные квантили
+│   └── experiment_0_80646.ipynb                # Эксперимент 4
+│
+├── final-submission/
+│   └── pavlova_m25_555_uml_signals_classification.ipynb  # Финальный сабмит на Kaggle
+│
 ├── data/
-│   ├── Run200_Wave_0_1.txt                             # Исходный датасет сигналов
-│   └── pavlova_m25_555_uml_signals_classification.csv  # Файл предсказаний для Kaggle
-├── requirements.txt                                    # Зависимости проекта
-├── .gitignore                                          # Игнорируемые файлы
-└── README.md                                           # Документация проекта
+│   └── Run200_Wave_0_1.txt                     # Исходный датасет (скачивается отдельно)
+│
+├── requirements.txt                             # Зависимости проекта
+├── .gitignore                                  # Игнорируемые файлы
+└── README.md                                   # Документация проекта
+
+### Примечание по файлам:
+
+В папке notebooks/ представлены промежуточные эксперименты (accuracy от 0.78 до 0.83), документирующие процесс подбора гиперпараметров и методов масштабирования.
+
+В папке final-submission/ находится итоговый файл, отправленный на Kaggle и достигший наилучшего результата 0.84675.
+
+Исходные данные не хранятся в репозитории из-за большого размера (69 МБ). После скачивания поместите Run200_Wave_0_1.txt в папку data/.
