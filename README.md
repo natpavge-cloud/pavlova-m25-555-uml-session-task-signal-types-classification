@@ -66,14 +66,12 @@
    cd pavlova-m25-555-uml-session-task-signal-types-classification
 
 2. Создайте виртуальное окружение (рекомендуется):
-
    ```bash
-  python -m venv venv
-  source venv/bin/activate  # Linux/Mac
-  venv\Scripts\activate     # Windows
+   python -m venv venv
+   source venv/bin/activate  # Linux/Mac
+   venv\Scripts\activate     # Windows
 
 3. Установите зависимости:
-
    ```bash
    pip install -r requirements.txt
 
@@ -84,7 +82,6 @@
 5. Поместите файл в папку data/
 
 6. Запустите Jupyter Notebook:
-
    ```bash
    jupyter notebook
 
