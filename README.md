@@ -85,7 +85,7 @@
    ```bash
    jupyter notebook
 
-7. Для финального решения откройте final-submission/pavlova_m25_555_uml_signals_classification.ipynb
+7. Для финального решения откройте notebooks/final_experiment_0_84675.ipynb
 
 8. Для просмотра экспериментов откройте любой файл в папке notebooks/
 
