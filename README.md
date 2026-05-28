@@ -62,8 +62,8 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/natpavge-cloud/pavlova-m25-555-uml-session-task-signal-types-classification.git
+   cd pavlova-m25-555-uml-session-task-signal-types-classification
 
 Создайте виртуальное окружение (рекомендуется):
 
