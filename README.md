@@ -94,11 +94,11 @@
 
 ```
 ├── notebooks/
-│ ├── final_experiment_0_84675.ipynb # Финальное решение (Accuracy 0.84675)
-│ ├── experiment_0_78137.ipynb # Эксперимент 1
-│ ├── experiment_0_83227_gmm_robust.ipynb # Эксперимент 2: GMM с RobustScaler
+│ ├── final_experiment_0_84675.ipynb           # Финальное решение (Accuracy 0.84675)
+│ ├── experiment_0_78137.ipynb                 # Эксперимент 1
+│ ├── experiment_0_83227_gmm_robust.ipynb      # Эксперимент 2: GMM с RobustScaler
 │ ├── experiment_0_83231_local_quantiles.ipynb # Эксперимент 3: локальные квантили
-│ └── experiment_0_80646.ipynb # Эксперимент 4
+│ └── experiment_0_80646.ipynb                 # Эксперимент 4
 │
 ├── final-submission/
 │ └── pavlova_m25_555_uml_signals_classification.ipynb # Финальный сабмит на Kaggle
@@ -106,9 +106,9 @@
 ├── data/
 │ └── Run200_Wave_0_1.txt # Исходный датасет (скачивается отдельно)
 │
-├── requirements.txt # Зависимости проекта
-├── .gitignore # Игнорируемые файлы
-└── README.md # Документация проекта
+├── requirements.txt    # Зависимости проекта
+├── .gitignore          # Игнорируемые файлы
+└── README.md           # Документация проекта
 ```
 
 ### Примечание по файлам:
