@@ -67,14 +67,17 @@
 
 2. Создайте виртуальное окружение (рекомендуется):
 
-bash
+# Создание виртуального окружения
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+
+# Активация на Linux/Mac
+source venv/bin/activate
+
+# Активация на Windows
+venv\Scripts\activate
 
 3. Установите зависимости:
 
-bash
 pip install -r requirements.txt
 
 4. Скачайте данные:
